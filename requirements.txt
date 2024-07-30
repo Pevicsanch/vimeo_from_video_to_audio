@@ -1,5 +1,3 @@
 yt-dlp
-youtube_dl
 brotli
 cryptography
-ffmpeg
