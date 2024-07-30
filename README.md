@@ -15,7 +15,6 @@ While watching a conference video on Vimeo, I realized that what I was most inte
 
 - Python 3.11.5
 - `yt-dlp`
-- `youtube_dl`
 - `brotli`
 - `cryptography`
 
@@ -63,6 +62,12 @@ pip install -r requirements.txt
 ```
 This installs the required packages.
 
+### Install ffmpeg
+
+install ffmpeg using Homebrew:
+```bash
+brew install ffmpeg
+```
 ## Usage
 
 To download the audio from a Vimeo video, run the following command:
@@ -72,3 +77,15 @@ python src/downloader.py
 You will be prompted to enter the Vimeo video URL and the output directory where the MP3 file will be saved.
 
 
+## example
+
+```bash
+python src/downloader.py
+Enter the Vimeo video URL: https://vimeo.com/123456789
+Enter the output directory: /path/to/output
+```
+## Troubleshooting
+
+- 	•	Ensure ffmpeg is installed and accessible from your PATH.
+- 	•	Verify you have the correct permissions to write to the output directory.
+- 	•	If the download fails, check your internet connection and try again.
